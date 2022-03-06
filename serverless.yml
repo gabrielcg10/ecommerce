@@ -25,7 +25,7 @@ functions:
       - httpApi:
           path: /games
           method: post
-   getGames:
+  getGames:
     handler: src/getGames.getGames
     events:
       - httpApi:
@@ -42,6 +42,12 @@ functions:
       - httpApi:
           path: /games/{id}
           method: put
+  deleteGame:
+    handler: src/deleteGame.deleteGame
+    events:
+      - httpApi:
+          path: /games/{id}
+          method: delete
 
 resources:
   Resources:
