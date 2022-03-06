@@ -43,7 +43,7 @@ functions:
       - httpApi:
           path: /games/{id}
           method: put
-  deleteGame:
+  deleteGames:
     handler: src/deleteGame.deleteGame
     events:
       - httpApi:
