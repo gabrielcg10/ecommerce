@@ -25,6 +25,12 @@ functions:
       - httpApi:
           path: /games
           method: post
+   getGames:
+    handler: src/getGames.getGames
+    events:
+      - httpApi:
+          path: /games
+          method: get
 
 resources:
   Resources:
