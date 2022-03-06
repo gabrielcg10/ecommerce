@@ -1,6 +1,6 @@
 const AWS = require("aws-sdk");
 
-const deleteGame = async(event) => {
+const deleteGames = async(event) => {
     const dynamodb = new AWS.DynamoDB.DocumentClient();
     const { id } = event.pathParameters;
 
@@ -22,5 +22,5 @@ const deleteGame = async(event) => {
 };
 
 module.exports = {
-    deleteGame,
+    deleteGames,
 };
