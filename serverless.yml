@@ -36,6 +36,12 @@ functions:
       - httpApi:
           path: /games/{id}
           method: get
+  updateGames:
+    handler: src/updateGames.updateGames
+    events:
+      - httpApi:
+          path: /games/{id}
+          method: put
 
 resources:
   Resources:
