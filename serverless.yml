@@ -32,7 +32,7 @@ functions:
           path: /games
           method: get
   getGame:
-    handler: src/getGame.getGame
+    handler: src/getGames.getGames
     events:
       - httpApi:
           path: /games/{id}
