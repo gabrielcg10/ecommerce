@@ -12,11 +12,11 @@ const getGame = async (event) => {
     })
     .promise();
 
-  const task = result.Item;
+  const game = result.Item;
 
   return {
     status: 200,
-    body: task,
+    body: game,
   };
 };
 

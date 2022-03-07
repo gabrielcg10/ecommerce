@@ -24,7 +24,7 @@ const updateGames = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: "Tarea actualizada",
+      message: "Game actualizado",
     }),
   };
 };
